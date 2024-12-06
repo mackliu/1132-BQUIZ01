@@ -23,6 +23,28 @@
                         <td width="7%">刪除</td>
                         <td></td>
                     </tr>
+                    <?php
+                    $rows=$Title->all();
+                    foreach($rows as $row){
+                    ?>
+                    <tr>
+                        <td width="45%">
+                            <img src="./upload/<?=$row['img'];?>" style="width:300px;height:30px;">    
+                        </td>
+                        <td width="23%"><?=$row['text'];?></td>
+                        <td width="7%">
+                            <input type="radio" name="sh" value="<?=$row['id'];?>">
+                        </td>
+                        <td width="7%">
+                            <input type="checkbox" name="del" value="<?=$row['id'];?>">
+                        </td>
+                        <td>
+                            <input type="button" value="更新圖片">
+                        </td>
+                    </tr>
+                    <?php
+                    }
+                    ?>
                 </tbody>
             </table>
             <table style="margin-top:40px; width:70%;">
