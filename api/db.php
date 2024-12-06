@@ -161,3 +161,4 @@ function to($url){
 
 
 $Title=new DB('titles');
+$Ad=new DB('ads');
