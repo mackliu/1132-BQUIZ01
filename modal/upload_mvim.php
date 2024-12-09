@@ -1,9 +1,9 @@
-<h3 class="cent">更新標題區圖片</h3>
+<h3 class="cent">更新動畫圖片</h3>
 <hr>
 <form action="api/update.php" method="post" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>標題區圖片：</td>
+            <td>動畫圖片：</td>
             <td><input type="file" name="img" id="img"></td>
         </tr>
     </table>
