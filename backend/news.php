@@ -56,15 +56,11 @@
                     $prev=$now-1;
                     echo "<a href='?do=$do&p=$prev'> < </a>";
                 }
-
-                
-                
                 for($i=1;$i<=$pages;$i++){
                     echo "<a href='?do=$do&p=$i'> ";
                     echo $i;
                     echo " </a>";
                 }
-
                 if(($now+1)<=$pages){
                     $next=$now+1;
                     echo "<a href='?do=$do&p=$next'> > </a>";
