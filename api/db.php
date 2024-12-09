@@ -164,3 +164,4 @@ $Title=new DB('titles');
 $Ad=new DB('ads');
 $Image=new DB('images');
 $Mvim=new DB('mvims');
+$News=new DB('news');
