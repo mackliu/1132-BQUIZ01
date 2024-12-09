@@ -18,6 +18,8 @@ if(isset($_POST['id'])){
                     
                     break;
                 case "admin":
+                    $row['acc']=$_POST['acc'][$idx];
+                    $row['pw']=$_POST['pw'][$idx];
                     
                     break;
                 case "menu":
