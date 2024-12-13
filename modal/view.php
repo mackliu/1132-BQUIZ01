@@ -3,7 +3,7 @@
 ?>
 <h3 class="cent">進站總人數管理</h3>
 <hr>
-<form action="api/update_view.php" method="post" enctype="multipart/form-data">
+<form action="api/update_data.php" method="post" enctype="multipart/form-data">
     <table style="width:300px;margin:auto">
         <tr class='yel'>
             <td>進站總人數：</td>
