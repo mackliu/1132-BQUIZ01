@@ -11,12 +11,6 @@ if(isset($_POST['id'])){
         }else{
             $row=$$db->find($id);
             switch($table){
-                case "title":
-                     
-                    $row['sh']=(isset($_POST['sh']) && $_POST['sh']==$id)?1:0;
-                    $row['text']=$_POST['text'][$idx];
-                    
-                    break;
                 case "admin":
                     $row['acc']=$_POST['acc'][$idx];
                     $row['pw']=$_POST['pw'][$idx];
