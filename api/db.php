@@ -168,3 +168,4 @@ $News=new DB('news');
 $Admin=new DB('admin');
 $Menu=new DB('menus');
 $Total=new DB('total');
+$Bottom=new DB('bottom');
