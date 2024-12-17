@@ -18,7 +18,7 @@
 				echo "<ol start='".($start+1)."'>";
 
                 foreach($rows as $row){
-                    echo "<li>";
+                    echo "<li class='sswww'>";
                     echo mb_substr($row['text'],0,20);
                         echo "<span class='all' style='display:none'>";
                         echo $row['text'];
@@ -58,7 +58,7 @@
 <script>
 	$(".sswww").hover(
 		function() {
-			$("#alt").html("" + $(this).children(".all").html() + "").css({
+			$("#alt").html("<pre>" + $(this).children(".all").html() + "</pre>").css({
 				"top": $(this).offset().top - 50
 			})
 			$("#alt").show()
