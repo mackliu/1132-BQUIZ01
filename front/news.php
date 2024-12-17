@@ -40,7 +40,8 @@
                     echo "<a href='?do=$do&p=$prev'> < </a>";
                 }
                 for($i=1;$i<=$pages;$i++){
-                    echo "<a href='?do=$do&p=$i'> ";
+					$size=($i==$now)?"24px":"16px";
+                    echo "<a href='?do=$do&p=$i' style='font-size:$size'> ";
                     echo $i;
                     echo " </a>";
                 }
