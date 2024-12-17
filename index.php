@@ -60,33 +60,27 @@
                     onclick="lo(&#39;?do=admin&#39;)">管理登入</button>
                 <div style="width:89%; height:480px;" class="dbor">
                     <span class="t botli">校園映象區</span>
-                    <div class='cent' id="up">
+                    <div class='cent' id="up" onclick="pp(1)">
                         <img src="./icon/up.jpg" alt="" srcset="">
                     </div>
                     <div class='cent'>
                     <?php 
                     $imgs=$Image->all(['sh'=>1]);
-                    foreach($imgs as $img){
-                        echo "<div>";
+                    foreach($imgs as $idx => $img){
+                        echo "<div class='im' id='ssaa{$idx}'>";
                         echo "<img src='./upload/{$img['img']}' style='width:150px;height:103px;border:3px solid orange'>";
                         echo "</div>";
                     }
 
-
                         ?>
                     </div>
-                    <div class='cent' id="dn">
+                    <div class='cent' id="dn" onclick="pp(2)">
                         <img src="./icon/dn.jpg" alt="">
                     </div>
 
-
-
-
-
-
                     <script>
                     var nowpage = 0,
-                        num = 0;
+                        num = <?=$Image->count(['sh'=>1]);?>;
 
                     function pp(x) {
                         var s, t;
